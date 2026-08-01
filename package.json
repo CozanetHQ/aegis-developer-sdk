@@ -1,7 +1,7 @@
 {
   "name": "@cozanethq/aegis-sdk",
   "version": "1.0.0",
-  "description": "Public TypeScript SDK for the AEGIS platform — talks only to the Gateway.",
+  "description": "Public TypeScript SDK for the AEGIS platform \u2014 talks only to the Gateway.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,11 +9,28 @@
     "test": "vitest run",
     "dev": "tsc --watch"
   },
-  "keywords": ["aegis", "cozanet", "crypto", "defi", "wallet", "sdk", "blockchain"],
+  "keywords": [
+    "aegis",
+    "cozanet",
+    "crypto",
+    "defi",
+    "wallet",
+    "sdk",
+    "blockchain"
+  ],
   "author": "CozanetHQ",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.4.0",
     "vitest": "^2.1.0"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "github:CozanetHQ/aegis-developer-sdk",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ]
 }
